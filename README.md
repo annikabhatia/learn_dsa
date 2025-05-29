@@ -145,19 +145,13 @@ Each folder will contain:
 
 ---
 
-## 📌 Contribution Roadmap
+## 📌 Implementation Roadmap
 
 ✅ = Done  
 🚧 = In Progress  
 📝 = Planned
 
-Feel free to contribute via pull requests or raise issues for collaboration.
-
 ---
 
-## ⭐ License
 
-This project is licensed under the MIT License. Feel free to use and adapt!
-
----
 
