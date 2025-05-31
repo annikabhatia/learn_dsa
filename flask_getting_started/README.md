@@ -113,6 +113,16 @@ Now go to [http://127.0.0.1:5000/about](http://127.0.0.1:5000/about) to test it.
 
 ---
 
+## 📘 References – Learn More About Flask
+
+Here are some great beginner-friendly resources:
+
+* 🔗 [Flask Official Documentation (Quickstart)](https://flask.palletsprojects.com/en/latest/quickstart/)
+* 📺 [Corey Schafer’s Flask Tutorial on YouTube (Very beginner-friendly)](https://www.youtube.com/playlist?list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc)
+* 📖 [Real Python: Flask by Example](https://realpython.com/flask-by-example-part-1-project-setup/)
+* 📘 [Tutorial: Flask Web App with Python (FreeCodeCamp)](https://www.freecodecamp.org/news/how-to-build-a-web-app-using-flask-and-python-3/)
+
+
 Happy coding! 🎉
 
 ---
