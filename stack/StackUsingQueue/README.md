@@ -1,4 +1,4 @@
-# 📘 Programming Assignment: **Implement Stack Using Queues**
+# 📘  **Implement Stack Using Queues**
 
 ---
 
