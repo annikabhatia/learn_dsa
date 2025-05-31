@@ -10,9 +10,18 @@ Your task is to **simulate a stack (Last-In-First-Out)** data structure using on
 
 ## 📚 Background
 
-A **stack** is a fundamental data structure that follows the **LIFO** principle. A **queue**, on the other hand, follows the **FIFO** principle. Though they seem to serve opposite purposes, it is possible to implement a stack using queues by carefully rearranging elements during each operation.
+In Python:
 
-This assignment will test your understanding of how abstract data structures work, and how to simulate one using another. It also builds problem-solving skills in terms of **algorithm design**, **efficiency**, and **data structure manipulation**.
+* A **stack** works on **LIFO** (Last-In-First-Out): The last element added is the first one removed.
+* A **queue** works on **FIFO** (First-In-First-Out): The first element added is the first one removed.
+
+Even though these are opposites, we can simulate a stack using queues by carefully moving elements around during operations like `push()` and `pop()`.
+
+Python provides a built-in **queue-like structure** in the `collections` module called `deque`. It allows fast appends and pops from both ends. For this assignment, we will treat `deque` like a **queue**, and only use:
+
+* `append()` → enqueue (add to back)
+* `popleft()` → dequeue (remove from front)
+
 
 ---
 
@@ -38,66 +47,77 @@ Implement a class `MyStack` that supports the following methods:
 
 ---
 
-## 🔐 Constraints
+## 🔐 Rules
 
-* You may only use the **standard operations of a queue**:
-
-  * `enqueue` (add to back)
-  * `dequeue` (remove from front)
-  * `peek` or `front` (view front)
-  * `isEmpty` (check if empty)
-* You may use:
-
-  * One queue (for extra challenge), or
-  * Two queues
-* You may use any programming language (Python preferred for submission).
-* Do **not use built-in stack or list methods like `.pop()` or `.append()` directly to simulate stack behavior.**
+* You are **not allowed to use Python’s built-in list stack methods like `pop()` or `[-1]` directly.**
+* You must only use **`collections.deque`** to simulate queue behavior.
+* You can use **one or two queues** (as `deque` instances).
 
 ---
 
 ## 🧪 Example Test Cases
 
-### Test Case 1:
-
 ```python
 stack = MyStack()
-stack.push(10)
-stack.push(20)
-stack.push(30)
+stack.push(1)
+stack.push(2)
+stack.push(3)
 
-assert stack.top() == 30
-assert stack.pop() == 30
-assert stack.top() == 20
-assert stack.pop() == 20
-assert stack.empty() == False
-assert stack.pop() == 10
-assert stack.empty() == True
-```
-
-### Test Case 2:
-
-```python
-stack = MyStack()
-stack.push(100)
-assert stack.top() == 100
-stack.push(200)
-assert stack.pop() == 200
-stack.push(300)
-assert stack.top() == 300
+print(stack.top())    # Output: 3
+print(stack.pop())    # Output: 3
+print(stack.top())    # Output: 2
+print(stack.pop())    # Output: 2
+print(stack.empty())  # Output: False
+print(stack.pop())    # Output: 1
+print(stack.empty())  # Output: True
 ```
 
 ---
 
-## 🧠 Suggested Implementation Approaches
+## 🧠 Tips for Implementation
 
-You can choose between:
+There are two possible strategies:
 
-1. **Costly Push, Cheap Pop:** Rearrange the queue during `push()`
-2. **Cheap Push, Costly Pop:** Rearrange the queue during `pop()`
+1. **Rearrange the queue on every push** so the newest element is always at the front.
+2. **Rearrange the queue on every pop** to retrieve the last added element.
 
-Clearly comment your approach in the code.
-  * Explains which approach you used
-  * Time & space complexity for each operation
-  * Any challenges or trade-offs you considered
+Choose either method. Just make sure the behavior matches a real stack.
 
 ---
+
+## 🧑‍💻 Getting Started
+
+Here’s a starting code snippet:
+
+```python
+from collections import deque
+
+class MyStack:
+    def __init__(self):
+        self.q1 = deque()
+        self.q2 = deque()
+    
+    def push(self, x):
+        # implement this
+        pass
+
+    def pop(self):
+        # implement this
+        pass
+
+    def top(self):
+        # implement this
+        pass
+
+    def empty(self):
+        # implement this
+        pass
+```
+
+---
+
+## 📎 Deliverables
+
+* Your completed Python file with class `MyStack`.
+* A few test cases in the main section (`if __name__ == '__main__':`) that demonstrate your stack in action.
+* Comment your code to explain the logic behind your chosen approach.
