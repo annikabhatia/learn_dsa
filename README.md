@@ -33,7 +33,7 @@ This repository showcases a collection of classic data structure implementations
 
 ## 🔁 Queue
 
-- **Implement Queue Using Stacks** – Use two stacks to implement a queue.
+- ** Help Desk Hero ** - Implement Queue Using Stacks. Use two stacks to implement a queue.
 - **Circular Queue** – Fixed-size circular queue implementation.
 - **Sliding Window Maximum** – Find max in each window using a deque.
 - **Task Scheduler** – Schedule tasks with cooldown using a queue.
