@@ -1,5 +1,5 @@
 
-# 🧾 Support Ticket Queue Using Python Lists
+# 🧾 Learn to implement a Queue using basic data structure (Lists/Stack)
 
 ## 📌 Assignment Title:
 **HelpDesk Hero: Build a Support Ticket Queue Using Python Lists**

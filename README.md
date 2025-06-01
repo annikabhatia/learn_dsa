@@ -135,12 +135,11 @@ This repository showcases a collection of classic data structure implementations
 These problems will be implemented in different languages to showcase versatility:
 - Python 🐍
 - Java ☕
-- C++ 💻
 - JavaScript ⚡
 
 Each folder will contain:
 - Source Code
-- Explanation / Comments
+- README.md file containting the problem
 - Unit Tests (where applicable)
 
 ---
