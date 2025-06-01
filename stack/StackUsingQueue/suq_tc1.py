@@ -1,4 +1,4 @@
-import MyStack
+from MyStack import MyStack
 
 stack = MyStack()
 stack.push(10)

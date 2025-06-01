@@ -6,9 +6,9 @@ class MyStack:
         self.q2 = deque()
     
     def push(self, x):
-        self.q1.append(x)
+        self.q2.append(x)
     
-        for i in self.q1:
+        for i in list(self.q1):
             #removes/returns the leftmost element of the deque
             self.q2.append(self.q1.popleft())
     
