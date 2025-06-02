@@ -1,4 +1,4 @@
-from weather_watcher import WeatherWatcher
+from queues.Sliding_Window_Maximum.weather_watcher.weather_watcher import WeatherWatcher
 
 def run_tests():
     print("Running tests for WeatherWatcher...\n")

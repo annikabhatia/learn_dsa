@@ -2,13 +2,21 @@ from typing import List
 
 def next_greater_element(arr: List[int]) -> List[int]:
     stack = []
-    for i in arr:
-        #condition should be that we need to reach 2nd element some how...so maybe just ignore first element?
-        while arr
+    result = []
+    greatest_element = arr[len(arr) - 1]
+    #Start from the end of the list, since we’re looking for the next element on the right
+    for i in reversed(arr):
+        #Keep the stack sorted in decreasing order from top to bottom
+        if stack and i > i - 1:
             stack.append(i)
-        if i - len(arr) == 0:
-            stack.append(-1)
-    return stack
+            greatest_element = i
+        else:
+            stack.append(greatest_element)
+        #if the stack is empty, the next greater element is `-1`
+        if not stack:
+            result.append(-1)
+
+    return result
 
 
 
